@@ -1,22 +1,24 @@
 class Form {
-    submit(submittedUser){
-        alert(this.submitteduser+"Form Submitted")
+    submit(submittedUser) {
+        this.submitteduser = submittedUser;
+        alert(this.submitteduser+"Form is submitted");    
     }
-    Cancel(){
-        alert(`${this.submit}Form Cancelled`)
+    cancel(CancelledUser) {
+        this.user = CancelledUser;
+        alert(` ${this.user} Form is cancelled`);
     }
-    fillDetails(givenName){
-        this.name=givenName;
+    fillDetails(givenName) {
+        this.name = givenName;
+        // console.log(this.name);
     }
 }
 
-const Huzaifa=new Form();
-const Ali=new Form();
-const Sameer=new Form();
+const huzaifa = new Form();
+const aaliyan = new Form();
+const sameer = new Form();
 
-Huzaifa.submit();
-Ali.fillDetails("Ali");
+// huzaifa.submit("Huzaifa");
+aaliyan.cancel("Aaliyan");
 
-Sameer.fillDetails("sameer");
-Sameer.submit();
-
+sameer.fillDetails("Sameer");
+sameer.submit();
