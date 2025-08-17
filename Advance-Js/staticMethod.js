@@ -16,5 +16,7 @@ class Parent {
 }
 
 const p = new Parent ("Rabiya");
+Parent.Capatalize
+p.intro
 
 
