@@ -1,7 +1,7 @@
 const form = document.getElementById("form");
 const inputField=document.getElementById("inputField");
 const button = document.getElementById("mybtn");
-const classlist =document.getElementsByClassName("lists")[0];
+const lists = document.getElementsByClassName("lists")[0];
 
 
 let todoArr= [];
@@ -13,7 +13,10 @@ form.addEventListener("submit",(e)=>{
     console.log(todo);
 
     todoArr =[...todoArr,todo];
-    console.log(todoArr)
+    console.log(todoArr);
+    UI.displayData();
+
+    inputField.value="";
 })
 
 class Todo {
@@ -21,3 +24,21 @@ class Todo {
         this.name=name;
     }
 }
+class UI {
+    static displayData(){
+        let displayData = todoArr.map((d)=>{
+            return`
+            <div>${d.name}</div>
+            `
+        });
+
+        lists.innerHTML =displayData.join("")
+    }
+}   
+
+
+
+
+
+
+

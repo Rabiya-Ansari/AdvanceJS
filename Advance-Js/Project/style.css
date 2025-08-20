@@ -1,26 +1,38 @@
-.container{
-    background: linear-gradient(#E2F3F4,#6DC7D1);
-    justify-items: center;
-    height: 50vh;
-    width: auto;
-    margin:auto;
+body {
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background:linear-gradient(#3E0703,#660B05);
+    backdrop-filter: blur(10px);   
+    box-shadow: 0 8px 32px white;
     border-radius: 20px;
+    width: 420px;
+    padding: 35px 40px;
+    text-align: center;
 }
-.form{
-    height: 30%;
-}
-h1{
-    font-size: 60px;
+
+h1 {
+    font-size: 48px;
     font-weight: bold;
     color: transparent;
-    background:url(https://media.gettyimages.com/id/910484150/photo/spinning-little-planet.jpg?s=612x612&w=gi&k=20&c=LZl4wftXdFQulPScBbV_Gsc0lui8mzgITbXqYRIJUg0=);
+    background: url(https://media.gettyimages.com/id/910484150/photo/spinning-little-planet.jpg?s=612x612&w=gi&k=20&c=LZl4wftXdFQulPScBbV_Gsc0lui8mzgITbXqYRIJUg0=);
     background-clip: text;
-
+    -webkit-background-clip: text;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
 }
-.form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .form input {
@@ -28,6 +40,17 @@ h1{
     border: 1px solid #bbb;
     border-radius: 8px;
     outline: none;
+    transition: 0.2s;
+}
+
+.form input:focus {
+    border-color: #6DC7D1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    font-weight: bold;
+    color:white;
 }
 
 .form button {
@@ -38,9 +61,10 @@ h1{
     color: white;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s transform ease;
 }
 
 .form button:hover {
     background: #4aaeb8;
+    transform: scale(1.04);
 }
