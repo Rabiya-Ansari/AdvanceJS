@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            transition: 2s ease-in-out;
+        }
+
+        body.ligh{
+            background: white;
+            color: black;
+        }
+
+        body.dark{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn">Switch</button> -->
+
+    <div id="light" class="iconHide"><i class="ri-sun-line"></i></div>
+    <div id="dark"><i class="ri-moon-line"></i></div>
+
+    <script src="./localStorage.js"></script>
+</body>
+</html>
